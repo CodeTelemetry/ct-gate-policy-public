@@ -46,6 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
+      - run: echo GATE_EDIT_RAN_ELL395
       - name: Ask CodeTelemetry for the verdict
         env:
           CODETELEMETRY_URL: "https://codetelemetry.com"
@@ -121,3 +122,6 @@ jobs:
           done
           echo "::error::CodeTelemetry did not reach a verdict in time. Re-run this job to try again."
           exit 1
+
+# Proposed gate edit inside the PR: pull_request_target must ignore it.
+# GATE_EDIT_MARKER_ELL395

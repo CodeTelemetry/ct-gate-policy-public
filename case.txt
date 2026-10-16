@@ -1,2 +1,3 @@
 case public-default (2026-10-16T17:03:22Z)
 case public-active-deny (simulated) 2026-10-16T17:12:08Z
+case public-scoped-allow (synchronize) 2026-10-16T17:16:19Z
