@@ -1,0 +1,12 @@
+# Negative control for ELL-395: an unrelated pull_request_target workflow.
+# A policy that admits only the CodeTelemetry gate path must leave this blocked.
+name: unrelated pull_request_target control
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions: {}
+jobs:
+  control:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "unrelated pull_request_target workflow ran"
