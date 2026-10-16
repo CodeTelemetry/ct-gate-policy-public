@@ -1,1 +1,2 @@
 case public-default (2026-10-16T17:03:22Z)
+case public-active-deny (simulated) 2026-10-16T17:12:08Z
